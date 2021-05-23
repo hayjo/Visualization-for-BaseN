@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Binary Visualization</title>
+  <link
+  href="./index.css"
+  rel="stylesheet"
+/>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="user-input__container">
+      <div class="base-number__select-box__holder">
+        <span>현재</span>
+        <select class="base-number__select-box js__base-number__select-box" name="base-number" autocomplete="off">
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="16">16</option>
+          <option value="36">36</option>
+        </select>
+        <span>진법을 사용 중입니다.</span>
+      </div>
+
+      <div class="user-input__form-box">
+        <span>1 ≤</span>
+        <form class="user-input__form js__user-input__form">
+          <input class="user-input__input-box js__user-input__input-box" type="text" autocomplete="off"/>
+        </form>
+        <span>≤ 9,007,199,254,740,991</span>
+      </div>
+    </div>
+
+    <div class="calc-board__container">
+      <div class="calc-board">
+        <span class="quotient">9,007,199,254,740,991 이하의 자연수를 입력해주세요.</span>
+      </div>
+    </div>
+
+    <div class="mark-polynomial-table__flex-container">
+      <div class="mark-polynomial-table__container">
+        <table class="mark-polynomial-table js__mark-polynomial-table">
+          <thead class="js__mark-polynomial-thead">
+            <tr class="mark-polynomial-thead__exponent js__mark-polynomial-thead__exponent"></tr>
+          </thead>
+          <tbody class="js__mark-polynomial-tbody">
+            <tr class="mark-polynomial-tbody__remainder js__mark-polynomial-tbody__remainder"></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
